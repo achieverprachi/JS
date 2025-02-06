@@ -1,0 +1,76 @@
+// two types of execution context
+// function execution context
+// global execution context
+//Eval execution context(part of global)
+
+//0. Global EP 
+//1. Memory creation pahse
+//2.Execution pahse
+
+// for eachi function executed , a new box is made having  -> deletes after completig 
+    // new variable environment
+    // execution thread
+    // now the PHASE 1 and pahse 2 will again be executed    
+
+
+    // a call stack is also made -> same like for all the lang
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////// ////////////// //////////////  //////////////
+// if
+const isUserloggedIn = true
+const temperature = 41
+
+// if ( temperature === 40 ){
+//     console.log("less than 50");
+// } else {
+//     console.log("temperature is greater than 50");
+// }
+
+// console.log("Execute");
+// <, >, <=, >=, ==, !=, ===, !==
+
+// const score = 200
+
+// if (score > 100) {
+// dont use var here , since vo scope ke bahar bhi aajata h , jo i hona nahi chaiye 
+//     let power = "fly"
+//     console.log(`User power: ${power}`);
+// }
+
+// console.log(`User power: ${power}`);
+
+
+const balance = 1000
+
+//not recommended format
+if (balance > 500) console.log("test"),console.log("test2");
+
+if (balance < 500) {
+    console.log("less than 500");
+} else if (balance < 750) {
+    console.log("less than 750");
+    
+} else if (balance < 900) {
+    console.log("less than 750");
+    
+} else {
+    console.log("less than 1200");
+
+}
+
+const userLoggedIn = true
+const debitCard = true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+if (userLoggedIn && debitCard && 2==3) {
+    console.log("Allow to buy course");
+}
+
+if (loggedInFromGoogle || loggedInFromEmail) {
+    console.log("User logged in");
+}
