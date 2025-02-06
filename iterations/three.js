@@ -5,6 +5,8 @@
 
 const arr = [1, 2, 3, 4, 5]
 
+
+// these are the loops of form for-> of
 for (const it of arr) {
     console.log(it);
 }
